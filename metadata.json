@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Remix: Grace\u0027s website",
+  "description": "Premium cold-pressed juice brand landing page with editorial layout, smooth scrolling, and beautiful motion designs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
