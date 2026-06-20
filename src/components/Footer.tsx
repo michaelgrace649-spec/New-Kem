@@ -29,7 +29,7 @@ export default function Footer({ onScrollToSection }: FooterProps) {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-8 mb-20">
           
           {/* Logo & Certifications Area */}
-          <div className="lg:col-span-5 space-y-8">
+          <div className="lg:col-span-7 space-y-8">
             <div className="space-y-4">
               <span className="font-display text-4xl font-black tracking-tight text-brand-black">
                 KEM'S DRINK<span className="text-accent-lime">.</span>
@@ -38,26 +38,10 @@ export default function Footer({ onScrollToSection }: FooterProps) {
                 Premium cold-pressed living nutrition designed for high performance and intentional daily rituals. Purely plants, bottled in organic conscious circle glass.
               </p>
             </div>
-
-            {/* Certification Badges */}
-            <div className="flex flex-wrap gap-3.5 pt-2">
-              <span className="border border-brand-black/20 px-3.5 py-1.5 text-[8px] font-mono tracking-widest text-brand-black/60 rounded-sm uppercase font-semibold">
-                🟢 USDA ORGANIC
-              </span>
-              <span className="border border-brand-black/20 px-3.5 py-1.5 text-[8px] font-mono tracking-widest text-brand-black/60 rounded-sm uppercase font-semibold">
-                🌿 NON-GMO VERIFIED
-              </span>
-              <span className="border border-brand-black/20 px-3.5 py-1.5 text-[8px] font-mono tracking-widest text-brand-black/60 rounded-sm uppercase font-semibold">
-                🧊 RAW & LIVING
-              </span>
-              <span className="border border-brand-black/20 px-3.5 py-1.5 text-[8px] font-mono tracking-widest text-brand-black/60 rounded-sm uppercase font-semibold">
-                ♻️ 100% GLASS return program
-              </span>
-            </div>
           </div>
 
           {/* Quick Links Indices */}
-          <div className="lg:col-span-3 grid grid-cols-2 gap-8">
+          <div className="lg:col-span-5 grid grid-cols-2 gap-8">
             <div className="space-y-5">
               <h5 className="text-[10px] font-mono tracking-widest text-brand-black/40 uppercase font-bold">
                 EXPLORE
@@ -65,34 +49,34 @@ export default function Footer({ onScrollToSection }: FooterProps) {
               <div className="space-y-3.5 flex flex-col items-start">
                 <button
                   onClick={() => onScrollToSection("products")}
-                  className="text-xs text-brand-black/70 hover:text-brand-black transition-colors"
+                  className="text-xs text-brand-black/70 hover:text-brand-black transition-colors cursor-pointer text-left"
                 >
-                  Drinks Store
+                  Products
                 </button>
                 <button
                   onClick={() => onScrollToSection("benefits")}
-                  className="text-xs text-brand-black/70 hover:text-brand-black transition-colors"
+                  className="text-xs text-brand-black/70 hover:text-brand-black transition-colors cursor-pointer text-left"
                 >
-                  Our Philosophy
+                  Benefits
                 </button>
                 <button
                   onClick={() => onScrollToSection("nutrition")}
-                  className="text-xs text-brand-black/70 hover:text-brand-black transition-colors"
+                  className="text-xs text-brand-black/70 hover:text-brand-black transition-colors cursor-pointer text-left"
                 >
-                  Bioactive Research
+                  Nutrition
                 </button>
                 <button
-                  onClick={() => onScrollToSection("pricing")}
-                  className="text-xs text-brand-black/70 hover:text-brand-black transition-colors"
+                  onClick={() => onScrollToSection("faq")}
+                  className="text-xs text-brand-black/70 hover:text-brand-black transition-colors cursor-pointer text-left"
                 >
-                  Weekly Plans
+                  FAQ
                 </button>
               </div>
             </div>
 
             <div className="space-y-5">
               <h5 className="text-[10px] font-mono tracking-widest text-brand-black/40 uppercase font-bold">
-                COMMUNITY
+                SOCIALS
               </h5>
               <div className="space-y-3.5 flex flex-col items-start text-xs text-brand-black/70">
                 <a href="#instagram" className="hover:text-brand-black flex items-center gap-1.5">
@@ -108,54 +92,13 @@ export default function Footer({ onScrollToSection }: FooterProps) {
             </div>
           </div>
 
-          {/* Luxury Newsletter Signup */}
-          <div className="lg:col-span-4 space-y-5">
-            <h5 className="text-[10px] font-mono tracking-widest text-brand-black/40 uppercase font-bold">
-              MONTHLY WELLNESS ALMANAC
-            </h5>
-            <p className="text-xs text-brand-black/60 leading-relaxed max-w-sm">
-              Subscribe to receive clean biohacking articles, priority early launch access, and limited batch invite codes. No spam. Simply botany.
-            </p>
-
-            <form onSubmit={handleSubscribe} className="relative max-w-sm pt-2">
-              <div className="flex items-center border-b border-brand-black/30 hover:border-brand-black focus-within:border-brand-black pb-2 transition-all">
-                <input
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Your lifestyle email"
-                  required
-                  className="w-full text-xs font-mono bg-transparent py-1 text-brand-black placeholder-gray-400"
-                />
-                <button
-                  type="submit"
-                  aria-label="Submit email newsletter registration"
-                  className="p-1 text-brand-black hover:text-accent-lime transition-all cursor-pointer"
-                >
-                  <ArrowRight className="w-4 h-4" />
-                </button>
-              </div>
-              
-              {isSubscribed && (
-                <span className="absolute left-0 bottom-[-24px] text-[10px] font-mono text-[#8FA542] uppercase font-bold">
-                  ✓ Joined. Prepare for organic wisdom.
-                </span>
-              )}
-            </form>
-          </div>
-
         </div>
 
         {/* Bottom Credits & Legal bar */}
         <div className="pt-10 border-t border-gray-100 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-[10px] font-mono text-brand-black/40 uppercase">
-            © {currentYear} Kem's Drink Inc. • Designed with meticulous intent.
+            © {currentYear} Kem's Drink Inc.
           </p>
-          <div className="flex items-center space-x-6 text-[10px] font-mono text-brand-black/40 uppercase">
-            <a href="#terms" className="hover:text-brand-black transition-colors">Terms of Ritual</a>
-            <a href="#privacy" className="hover:text-brand-black transition-colors">Privacy Circle</a>
-            <a href="#transparency" className="hover:text-brand-black transition-colors">Sourcing Map</a>
-          </div>
         </div>
 
       </div>

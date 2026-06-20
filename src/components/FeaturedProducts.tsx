@@ -26,9 +26,7 @@ export default function FeaturedProducts({ onAddToCart, onOpenIngredients }: Fea
         
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-20 md:mb-28 space-y-4">
-          <span className="text-xs font-mono font-bold tracking-widest text-[#8FA542] bg-[#F5F8EC] px-3.5 py-1.5 rounded-md uppercase inline-block">
-            🛒 OUR COLD PRESSED COLLECTION
-          </span>
+
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-brand-black leading-none">
             Choose your elixir.
           </h2>

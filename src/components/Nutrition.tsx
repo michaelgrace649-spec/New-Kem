@@ -87,9 +87,7 @@ export default function Nutrition() {
         
         {/* Section Title */}
         <div className="mb-20 md:mb-28 max-w-2xl space-y-4">
-          <span className="text-xs font-mono font-bold tracking-widest text-[#8FA542] bg-[#F5F8EC] px-3.5 py-1.5 rounded-md uppercase inline-block">
-            🧬 LAB CERTIFIED NUTRITION
-          </span>
+
           <h2 className="font-display text-4xl md:text-6xl font-bold tracking-tight text-brand-black leading-none">
             Everything your body needs. <br />
             Nothing it doesn't.

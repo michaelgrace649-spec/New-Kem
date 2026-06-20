@@ -173,12 +173,7 @@ export default function Hero({ products, onScrollToSection, onAddToCart }: HeroP
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="space-y-6 md:space-y-8 max-w-xl"
         >
-          {/* Label */}
-          <div className="inline-flex items-center gap-2">
-            <span className="text-[10px] md:text-xs font-mono font-bold tracking-widest text-[#8FA542] bg-[#F5F8EC] px-3.5 py-1.5 rounded-md uppercase">
-              🌱 ORGANIC COLD PRESSED
-            </span>
-          </div>
+
 
           {/* Headline - Editorial scale */}
           <h1 className="font-display text-4xl sm:text-5xl lg:text-[76px] font-bold text-brand-black tracking-tight leading-[0.95] drop-shadow-2xs">

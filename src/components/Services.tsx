@@ -61,9 +61,7 @@ export default function Services({ onScrollToSection }: ServicesProps) {
                   transition={{ duration: 0.7, ease: "easeOut", delay: 0.1 }}
                   className="w-full md:w-1/2 space-y-6"
                 >
-                  <span className="text-[10px] font-mono tracking-widest font-bold text-accent-lime bg-accent-lime/10 px-3.5 py-1.5 rounded-full uppercase inline-block">
-                    {service.badge}
-                  </span>
+
                   
                   <h3 className="font-display text-3xl md:text-4xl font-bold text-brand-black leading-tight">
                     {service.title}

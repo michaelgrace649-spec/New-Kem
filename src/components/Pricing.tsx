@@ -14,9 +14,7 @@ export default function Pricing({ onSelectPlan }: PricingProps) {
         
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-20 md:mb-28 space-y-4">
-          <span className="text-xs font-mono font-bold tracking-widest text-[#8FA542] bg-[#F5F8EC] px-3.5 py-1.5 rounded-md uppercase inline-block">
-            📅 WEEKLY WELLNESS SUBSCRIPTIONS
-          </span>
+
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-brand-black leading-none">
             Choose your daily wellness journey
           </h2>
